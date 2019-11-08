@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/css.css" />
+	</head>
+	<body>
+		<div class="container" id="container">
+		    <ul class="wrapper">
+		        <li class="slide"><img src="https://zhanhu56.com/h5/freeSlider/imgs/1.jpg" alt=""></li>
+		        <li class="slide"><img src="https://zhanhu56.com/h5/freeSlider/imgs/2.jpg" alt=""></li>
+		        <li class="slide"><img src="https://zhanhu56.com/h5/freeSlider/imgs/3.jpg" alt=""></li>
+		        <li class="slide"><img src="https://zhanhu56.com/h5/freeSlider/imgs/4.jpg" alt=""></li>
+		    </ul>
+		    <div class="next-left"></div>
+		    <div class="next-right"></div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		<script type="text/javascript" src="js/swiper.js" ></script>
+		<script>
+			var aa = new swiper('#container',{
+				interval:2000,//播放间隔 毫秒
+				speed:1,//播放时间 秒
+				timing:'ease',//播放曲线
+				nextLeft:'.next-left',//左切换
+				nextRight:'.next-right',//右切换
+				pagination:'.swiper-pagination'//分页器
+			})
+		</script>
+	</body>
+</html>
